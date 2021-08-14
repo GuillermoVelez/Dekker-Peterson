@@ -285,38 +285,52 @@ public class Main extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnDekker1)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnDekker2)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnDekker3))
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pbProceso1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(peterson)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblStatusP1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(22, 22, 22)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblStatusP2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap()
+                        .addComponent(btnDekker1)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnDekker2)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnDekker3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnDekker4))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnDekker4)
+                        .addGap(26, 26, 26)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pbProceso1, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblStatusP1, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(btnDekker5)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton1))
-                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pbProceso2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel3)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btnDekker5)
+                                        .addGap(26, 26, 26)
+                                        .addComponent(peterson)))
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton1)
+                                .addContainerGap(45, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(pbProceso2, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(29, 29, 29))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(137, 137, 137))))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblStatusP2, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -328,13 +342,16 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(btnDekker3)
                     .addComponent(btnDekker4)
                     .addComponent(btnDekker5)
-                    .addComponent(jButton1))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
+                    .addComponent(jButton1)
                     .addComponent(peterson))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel3))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2)))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(pbProceso1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pbProceso2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -342,11 +359,11 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblStatusP1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblStatusP2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         pack();
@@ -364,9 +381,12 @@ public class Main extends javax.swing.JFrame {
     private void btnDekker1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDekker1ActionPerformed
         // TODO add your handling code here:
         calcTurn();
-        thread1.start();
+        if(!thread1.getState().equals("RUNNABLE"))
+            thread1.start();
+        System.out.println(thread1.getState());
         thread1.Dekker(1);
-        thread2.start();
+        if(!thread2.getState().equals("RUNNABLE"))
+            thread2.start();
         thread2.Dekker(1);
     }//GEN-LAST:event_btnDekker1ActionPerformed
 
@@ -374,8 +394,12 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         setP1qe(false);
         setP2qe(false);
+        if(thread1.getState().equals("RUNNABLE"))
+            thread1.interrupt();
         thread1.start();
         thread1.Dekker(2);
+        if(thread2.getState().equals("RUNNABLE"))
+            thread2.interrupt();
         thread2.start();
         thread2.Dekker(2);
     }//GEN-LAST:event_btnDekker2ActionPerformed
@@ -384,9 +408,11 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         setP1qe(false);
         setP2qe(false);
-        thread1.start();
+        if(!thread1.getState().equals("RUNNABLE"))
+            thread1.start();
         thread1.Dekker(3);
-        thread2.start();
+        if(!thread2.getState().equals("RUNNABLE"))
+            thread2.start();
         thread2.Dekker(3);
     }//GEN-LAST:event_btnDekker3ActionPerformed
 
@@ -394,9 +420,11 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         setP1qe(false);
         setP2qe(false);
-        thread1.start();
+        if(!thread1.getState().equals("RUNNABLE"))
+            thread1.start();
         thread1.Dekker(4);
-        thread2.start();
+        if(!thread2.getState().equals("RUNNABLE"))
+            thread2.start();
         thread2.Dekker(4);
     }//GEN-LAST:event_btnDekker4ActionPerformed
 
@@ -405,18 +433,22 @@ public class Main extends javax.swing.JFrame {
         calcTurn();
         setP1qe(false);
         setP2qe(false);
-        thread1.start();
+        if(!thread1.getState().equals("RUNNABLE"))
+            thread1.start();
         thread1.Dekker(5);
-        thread2.start();
+        if(!thread2.getState().equals("RUNNABLE"))
+            thread2.start();
         thread2.Dekker(5);
     }//GEN-LAST:event_btnDekker5ActionPerformed
 
     private void petersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_petersonActionPerformed
         setInterested(0,false);
         setInterested(1,true);
-        thread1.start();
+        if(!thread1.getState().equals("RUNNABLE"))
+            thread1.start();
         thread1.Dekker(6);
-        thread2.start();
+        if(!thread2.getState().equals("RUNNABLE"))
+            thread2.start();
         thread2.Dekker(6);
     }//GEN-LAST:event_petersonActionPerformed
 

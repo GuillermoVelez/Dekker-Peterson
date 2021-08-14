@@ -61,9 +61,9 @@ public class Thread2 extends Thread {
             }
             // Accede a Región Crítica
             criticalSection(2);
-            // Hace final tasks
-            doTasks("final", 2);
+            // Hace final tasks            
             Main.gui.setTurn(2);
+            doTasks("final", 2);
     }
     
     private void dekker2(){
@@ -164,7 +164,7 @@ public class Thread2 extends Thread {
         Main.gui.setInterested(process,false);
     }
     private void waitcs(){
-        Main.gui.updateStatusP2("Waiting");
+        Main.gui.updateStatusP2("Waiting  ");
         Main.gui.setOperationProgressBarP2("wait");
         Main.gui.setVisibleProgressBarP2("show");
     }   
