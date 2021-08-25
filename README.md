@@ -9,17 +9,18 @@ A continuación se presentan 6 algoritmos para solucionar problemas de concurren
 
 
 ## Dekker primera versión (Alternancia Crítica)
-Exige que cada proceso posea un turno, y este turno cambiara cada vez que el proceso salga de la sección crítica. 
+La primer versión del algoritmo de Dekker es Alternancia Estricta, es llamado de esta manera ya que obliga a que cada proceso tenga un turno,o sea que hay un cambio de turno cada vez que un proceso sale de la sección critica,por lo tanto si un proceso es lento atrasará a otros procesos que son rápidos.
 ##### Características
 * Garantiza la exclusión mutúa.
-* Se fuerza su sincronizacion.
-* No garantiza progresion, los procesos mas lentos retardan a los demas procesos.
+* Su sincronización es forzada
+* Acopla fuertemente a los procesos (procesos lentos atrasan a procesos rápidos)
+* No garantiza la progresión, ya que si un proceso por alguna razón es bloqueado dentro o fuera de la sección puede bloquear a los otros procesos.
 
 
 ### Código en Java
 #### Proceso 1
 ```java
-	// Hace tasks
+    // Hace tasks
     doTasks("initial", 2);
     // Espera a que la región crítica se desocupe
     while (Main.gui.getTurn() == 2) {
@@ -33,7 +34,7 @@ Exige que cada proceso posea un turno, y este turno cambiara cada vez que el pro
 ```
 #### Proceso 2
 ```java
-	// Hace tasks
+    // Hace tasks
     doTasks("initial", 2);
     // Espera a que la Sección crítica se desocupe
     while (Main.gui.getTurn() == 1) {
@@ -55,6 +56,9 @@ Exige que cada proceso posea un turno, y este turno cambiara cada vez que el pro
 | mientras Turno==2 | 1 | En ejecución | Listo |
 | mientras Turno==2 | 2 | Listo | En ejecución |
 ### Explicación
+* Cuando un proceso es ejecutado verifica si es su turno, si no es su turno se queda en espera por medio de un ciclo while.
+* De lo contrario si es su turno avanza a la sección crítica.
+* Cuando el proceso sale de la sección crítica cambia de turno. 
 
 ## Dekker segunda versión (Problema Interbloqueo)
 En esta version el proceso que haya completado sus tareas iniciales, se le permitira acceder a la sección crítica.
