@@ -271,7 +271,7 @@ El cual nos indica que al momento que un proceso accede a la seccion crítica, e
 | Excepcion| Verdadero | Verdadero | Listo | Listo |
 
 ### Explicación
-* Se realizalastareas iniciales, luego se verifica si hay otro procesos que puede entrar, si lo hay se entra al ciclo y si es el turno de algún otro proceso cambia su estado a ya no poder entrar a la sección crítica y nuevamente verifica si es el turno de algún otro proceso si lo es se queda en ciclado hasta que se da un cambio de turno, luego nuevamente retoma su estado de poder entrar a la sección critica, regresa al ciclo y verifica si hay otro proceso que puede entrar entonces nuevamente se encicla, de lo contrario entra a la sección critica. 
+* Se realiza las tareas iniciales, luego se verifica si hay otro procesos que puede entrar, si lo hay se entra al ciclo y si es el turno de algún otro proceso cambia su estado a ya no poder entrar a la sección crítica y nuevamente verifica si es el turno de algún otro proceso si lo es se queda en ciclado hasta que se da un cambio de turno, luego nuevamente retoma su estado de poder entrar a la sección critica, regresa al ciclo y verifica si hay otro proceso que puede entrar entonces nuevamente se encicla, de lo contrario entra a la sección critica. 
 * Al salir de la sección critica el proceso cambia su turno, cambia su estado y realiza sus tareas finales.
 
 
